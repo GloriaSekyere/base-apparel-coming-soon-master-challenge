@@ -9,4 +9,114 @@ body {
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
 }
+
+.logo {
+  width: 125px;
+  margin: 25px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero {
+  width: 100%;
+  height: 250px;
+  background-image: url(../images/hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  text-align: center;
+  width: 85%;
+  margin: 50px auto 0;
+}
+
+.content__title {
+  font-size: 35px;
+  letter-spacing: 10px;
+  margin-bottom: 15px;
+}
+
+.content__title span {
+  color: #ce9797;
+  font-weight: 300;
+  display: block;
+}
+
+.content__description {
+  color: #ce9797;
+  line-height: 1.6;
+}
+
+.email {
+  width: 85%;
+  margin: 35px auto 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.email__field {
+  padding-left: 25px;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-width: 1px;
+  border-color: #ce9797;
+  border-style: solid;
+  border-radius: 25px;
+}
+
+.email__field::-webkit-input-placeholder {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.email__field:-ms-input-placeholder {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.email__field::-ms-input-placeholder {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.email__field::placeholder {
+  color: #ce9797;
+  font-weight: 300;
+}
+
+.email__submit {
+  width: 65px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  border: none;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  -webkit-box-shadow: 0 15px 25px #e7c0c0;
+          box-shadow: 0 15px 25px #e7c0c0;
+}
 /*# sourceMappingURL=index.css.map */
