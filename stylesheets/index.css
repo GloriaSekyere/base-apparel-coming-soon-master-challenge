@@ -115,8 +115,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  background-image: url(../images/icon-arrow.svg), linear-gradient(135deg, #f8bfbf, #ee8c8c);
   -webkit-box-shadow: 0 15px 25px #e7c0c0;
           box-shadow: 0 15px 25px #e7c0c0;
+  background-position: center center, left top;
+  background-repeat: no-repeat;
 }
 /*# sourceMappingURL=index.css.map */
