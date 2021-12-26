@@ -56,7 +56,7 @@ body {
 }
 
 .email {
-  width: 85%;
+  width: 80%;
   margin: 35px auto 50px;
   display: flex;
   justify-content: center;
@@ -93,7 +93,15 @@ body {
     background-image: url(../images/icon-arrow.svg), linear-gradient(135deg,$gradient);
     box-shadow: 0 15px 25px hsl(0, 45%, 83%);
     background-position: center center, left top;
-   background-repeat: no-repeat;
-    
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &__error {
+    position: absolute;
+    top: 50%;
+    right: 32.5px;
+    transform: translate(0, -50%);
+    z-index: 0;
   }
 }

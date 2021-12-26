@@ -52,7 +52,7 @@ body {
 }
 
 .email {
-  width: 85%;
+  width: 80%;
   margin: 35px auto 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -120,5 +120,15 @@ body {
           box-shadow: 0 15px 25px #e7c0c0;
   background-position: center center, left top;
   background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.email__error {
+  position: absolute;
+  top: 50%;
+  right: 32.5px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+  z-index: 0;
 }
 /*# sourceMappingURL=index.css.map */
