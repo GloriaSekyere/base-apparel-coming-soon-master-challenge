@@ -10,6 +10,10 @@ body {
   font-size: 16px;
 }
 
+main {
+  padding-bottom: 50px;
+}
+
 .logo {
   width: 125px;
   margin: 25px;
@@ -53,7 +57,7 @@ body {
 
 .email {
   width: 80%;
-  margin: 35px auto 50px;
+  margin: 35px auto 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,5 +134,13 @@ body {
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   z-index: 0;
+}
+
+.validation-text {
+  color: #f96262;
+  width: 80%;
+  margin: auto;
+  padding-left: 25px;
+  visibility: hidden;
 }
 /*# sourceMappingURL=index.css.map */
