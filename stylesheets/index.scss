@@ -7,6 +7,7 @@
 }
 
 body {
+  height: 100vh;
   font: {
     family: "Josefin Sans", sans-serif;
     size: 16px;
@@ -60,7 +61,7 @@ main {
 }
 
 .email {
-  width: 80%;
+  width: 77.5%;
   margin: 35px auto 10px;
   display: flex;
   justify-content: center;
@@ -82,6 +83,15 @@ main {
       color: $desaturated-red;
       font-weight: 300;
     }
+    &:focus {
+      background-color: yellow;
+      border: {
+        width: 1px;
+        color: $soft-red;
+        style: solid;
+        radius: 25px;
+      }
+    }
   }
 
   &__submit {
@@ -99,12 +109,13 @@ main {
     background-position: center center, left top;
     background-repeat: no-repeat;
     z-index: 1;
+    transition: right 1s;
   }
 
   &__error {
     position: absolute;
     top: 50%;
-    right: 32.5px;
+    right: 40px;
     transform: translate(0, -50%);
     z-index: 0;
   }
@@ -115,5 +126,6 @@ main {
   width: 80%;
   margin: auto ;
   padding-left: 25px;
-  visibility: hidden;
+  opacity: 0;
+  transition: all 1s;
 }

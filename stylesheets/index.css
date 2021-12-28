@@ -6,6 +6,7 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Josefin Sans", sans-serif;
   font-size: 16px;
 }
@@ -56,7 +57,7 @@ main {
 }
 
 .email {
-  width: 80%;
+  width: 77.5%;
   margin: 35px auto 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -103,6 +104,14 @@ main {
   font-weight: 300;
 }
 
+.email__field:focus {
+  background-color: yellow;
+  border-width: 1px;
+  border-color: #f96262;
+  border-style: solid;
+  border-radius: 25px;
+}
+
 .email__submit {
   width: 65px;
   height: 50px;
@@ -125,12 +134,14 @@ main {
   background-position: center center, left top;
   background-repeat: no-repeat;
   z-index: 1;
+  -webkit-transition: right 1s;
+  transition: right 1s;
 }
 
 .email__error {
   position: absolute;
   top: 50%;
-  right: 32.5px;
+  right: 40px;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   z-index: 0;
@@ -141,6 +152,8 @@ main {
   width: 80%;
   margin: auto;
   padding-left: 25px;
-  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 /*# sourceMappingURL=index.css.map */
