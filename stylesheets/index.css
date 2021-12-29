@@ -105,11 +105,7 @@ main {
 }
 
 .email__field:focus {
-  background-color: yellow;
-  border-width: 1px;
   border-color: #f96262;
-  border-style: solid;
-  border-radius: 25px;
 }
 
 .email__submit {

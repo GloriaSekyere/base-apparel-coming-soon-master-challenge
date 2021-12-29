@@ -84,13 +84,8 @@ main {
       font-weight: 300;
     }
     &:focus {
-      background-color: yellow;
-      border: {
-        width: 1px;
-        color: $soft-red;
-        style: solid;
-        radius: 25px;
-      }
+      //background-color: yellow;
+      border-color: $soft-red;
     }
   }
 
