@@ -85,8 +85,11 @@ main {
       font-weight: 300;
     }
     &:focus {
-      //background-color: yellow;
-      border-color: $soft-red;
+      outline: none;
+      border: {
+        color: $soft-red;
+        width: 2.5px;
+      }
     }
   }
 

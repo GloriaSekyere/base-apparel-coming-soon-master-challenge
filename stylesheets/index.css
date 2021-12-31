@@ -106,7 +106,9 @@ main {
 }
 
 .email__field:focus {
+  outline: none;
   border-color: #f96262;
+  border-width: 2.5px;
 }
 
 .email__submit {
