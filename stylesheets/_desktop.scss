@@ -1,11 +1,3 @@
-@import "variables";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   height: 100vh;
   font: {
@@ -15,12 +7,13 @@ body {
 }
 
 main {
-  padding-bottom: 50px;
+  width: 45%;
+  padding: 75px 0 50px 10%;
 }
 
 .logo {
-  width: 125px;
-  margin: 25px;
+  width: 100%;
+  margin: 0;
 
   img {
     max-width: 100%;
@@ -29,24 +22,28 @@ main {
 }
 
 .hero {
-  width: 100%;
-  height: 250px;
+  width: 45%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
   background: {
-    image: url(../images/hero-mobile.jpg);
+    image: url(../images/hero-desktop.jpg);
     repeat: no-repeat;
     size: cover;
   }
 }
 
 .content {
-  text-align: center;
-  width: 85%;
-  margin: 50px auto 0;
+  text-align: left;
+  width: 100%;
+  margin: 125px 0 40px 0;
 
   &__title {
-    font-size: 35px;
-    letter-spacing: 10px;
-    margin-bottom: 15px;
+    font-size: 65px;
+    letter-spacing: 20px;
+    line-height: 1.1;
+    margin-bottom: 25px;
     span {
       color: $desaturated-red;
       font-weight: 300;
@@ -56,13 +53,14 @@ main {
 
   &__description {
     color: $desaturated-red;
-    line-height: 1.6;
+    line-height: 1.8;
+    width: 100%;
   }
 }
 
 .email {
-  width: 77.5%;
-  margin: 35px auto 10px;
+  width: 100%;
+  margin: 0 0 0 0;
   display: flex;
   justify-content: center;
   position: relative;
@@ -70,14 +68,14 @@ main {
   &__field {
     padding-left: 25px;
     width: 100%;
-    height: 50px;
+    height: 55px;
     display: flex;
     align-items: center;
     border: {
       width: 1px;
       color: $desaturated-red;
       style: solid;
-      radius: 25px;
+      radius: 30px;
     }
     &::placeholder {
       color: $desaturated-red;
@@ -93,12 +91,12 @@ main {
   }
 
   &__submit {
-    width: 65px;
-    height: 50px;
+    width: 100px;
+    height: 55px;
     position: absolute;
     right: 0;
     border: none;
-    border-radius: 25px;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,21 +111,18 @@ main {
   &__error {
     position: absolute;
     top: 50%;
-    right: 40px;
+    right: 75px;
     transform: translate(0, -50%);
     z-index: 0;
+    transition: right 1s;
   }
 }
 
 .validation-text {
   color: $soft-red;
   width: 80%;
-  margin: auto ;
+  margin: 10px 0 ;
   padding-left: 25px;
   opacity: 0;
-  transition: all 1s;
-}
-
-@media (min-width: 1280px) {
-  @import "desktop";
+  transition: opacity 1s;
 }

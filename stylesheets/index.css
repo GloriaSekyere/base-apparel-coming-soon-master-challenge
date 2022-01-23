@@ -13,7 +13,6 @@ body {
 
 main {
   padding-bottom: 50px;
-  overflow: hidden;
 }
 
 .logo {
@@ -154,5 +153,147 @@ main {
   opacity: 0;
   -webkit-transition: all 1s;
   transition: all 1s;
+}
+
+@media (min-width: 1280px) {
+  body {
+    height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 16px;
+  }
+  main {
+    width: 45%;
+    padding: 75px 0 50px 10%;
+  }
+  .logo {
+    width: 100%;
+    margin: 0;
+  }
+  .logo img {
+    max-width: 100%;
+    height: auto;
+  }
+  .hero {
+    width: 45%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../images/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .content {
+    text-align: left;
+    width: 100%;
+    margin: 125px 0 40px 0;
+  }
+  .content__title {
+    font-size: 65px;
+    letter-spacing: 20px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+  }
+  .content__title span {
+    color: #ce9797;
+    font-weight: 300;
+    display: block;
+  }
+  .content__description {
+    color: #ce9797;
+    line-height: 1.8;
+    width: 100%;
+  }
+  .email {
+    width: 100%;
+    margin: 0 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+  }
+  .email__field {
+    padding-left: 25px;
+    width: 100%;
+    height: 55px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-width: 1px;
+    border-color: #ce9797;
+    border-style: solid;
+    border-radius: 30px;
+  }
+  .email__field::-webkit-input-placeholder {
+    color: #ce9797;
+    font-weight: 300;
+  }
+  .email__field:-ms-input-placeholder {
+    color: #ce9797;
+    font-weight: 300;
+  }
+  .email__field::-ms-input-placeholder {
+    color: #ce9797;
+    font-weight: 300;
+  }
+  .email__field::placeholder {
+    color: #ce9797;
+    font-weight: 300;
+  }
+  .email__field:focus {
+    outline: none;
+    border-color: #f96262;
+    border-width: 2.5px;
+  }
+  .email__submit {
+    width: 100px;
+    height: 55px;
+    position: absolute;
+    right: 0;
+    border: none;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: url(../images/icon-arrow.svg), linear-gradient(135deg, #f8bfbf, #ee8c8c);
+    -webkit-box-shadow: 0 15px 25px #e7c0c0;
+            box-shadow: 0 15px 25px #e7c0c0;
+    background-position: center center, left top;
+    background-repeat: no-repeat;
+    z-index: 1;
+    -webkit-transition: right 1s;
+    transition: right 1s;
+  }
+  .email__error {
+    position: absolute;
+    top: 50%;
+    right: 75px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    z-index: 0;
+    -webkit-transition: right 1s;
+    transition: right 1s;
+  }
+  .validation-text {
+    color: #f96262;
+    width: 80%;
+    margin: 10px 0;
+    padding-left: 25px;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    transition: opacity 1s;
+  }
 }
 /*# sourceMappingURL=index.css.map */
