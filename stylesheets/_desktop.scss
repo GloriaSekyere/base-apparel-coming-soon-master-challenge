@@ -4,6 +4,10 @@ body {
     family: "Josefin Sans", sans-serif;
     size: 16px;
   }
+  background: {
+    image: url(../images/bg-pattern-desktop.svg);
+    repeat: no-repeat;
+  };
 }
 
 main {

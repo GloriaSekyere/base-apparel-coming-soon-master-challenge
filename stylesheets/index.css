@@ -160,6 +160,8 @@ main {
     height: 100vh;
     font-family: "Josefin Sans", sans-serif;
     font-size: 16px;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
   }
   main {
     width: 45%;
