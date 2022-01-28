@@ -7,6 +7,7 @@ body {
   background: {
     image: url(../images/bg-pattern-desktop.svg);
     repeat: no-repeat;
+    size: 60% 100%;
   };
 }
 
@@ -45,7 +46,7 @@ main {
 
   &__title {
     font-size: 65px;
-    letter-spacing: 20px;
+    letter-spacing: 17px;
     line-height: 1.1;
     margin-bottom: 25px;
     span {
@@ -75,6 +76,7 @@ main {
     height: 55px;
     display: flex;
     align-items: center;
+    background-color:rgba(0, 0, 0, 0);
     border: {
       width: 1px;
       color: $desaturated-red;
@@ -110,6 +112,7 @@ main {
     background-repeat: no-repeat;
     z-index: 1;
     transition: right 1s;
+    cursor: pointer;
   }
 
   &__error {

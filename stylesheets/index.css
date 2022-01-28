@@ -162,6 +162,7 @@ main {
     font-size: 16px;
     background-image: url(../images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
+    background-size: 60% 100%;
   }
   main {
     width: 45%;
@@ -192,7 +193,7 @@ main {
   }
   .content__title {
     font-size: 65px;
-    letter-spacing: 20px;
+    letter-spacing: 17px;
     line-height: 1.1;
     margin-bottom: 25px;
   }
@@ -227,6 +228,7 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    background-color: rgba(0, 0, 0, 0);
     border-width: 1px;
     border-color: #ce9797;
     border-style: solid;
@@ -277,6 +279,7 @@ main {
     z-index: 1;
     -webkit-transition: right 1s;
     transition: right 1s;
+    cursor: pointer;
   }
   .email__error {
     position: absolute;
