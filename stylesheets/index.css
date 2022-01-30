@@ -256,6 +256,7 @@ main {
     border-width: 2.5px;
   }
   .email__submit {
+    color: rgba(0, 0, 0, 0);
     width: 100px;
     height: 55px;
     position: absolute;
