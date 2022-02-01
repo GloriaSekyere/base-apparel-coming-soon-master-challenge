@@ -125,8 +125,7 @@ main {
   width: 80%;
   margin: auto ;
   padding-left: 25px;
-  opacity: 0;
-  transition: all 1s;
+  display: none;
 }
 
 @media (min-width: 1280px) {

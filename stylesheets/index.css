@@ -151,9 +151,7 @@ main {
   width: 80%;
   margin: auto;
   padding-left: 25px;
-  opacity: 0;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  display: none;
 }
 
 @media (min-width: 1280px) {
@@ -297,9 +295,7 @@ main {
     width: 80%;
     margin: 10px 0;
     padding-left: 25px;
-    opacity: 0;
-    -webkit-transition: opacity 1s;
-    transition: opacity 1s;
+    display: none;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -5,6 +5,7 @@ let form = document.querySelector(".email");
 let email = document.querySelector(".email__field");
 let button = document.querySelector(".email__submit");
 let error = document.querySelector(".email__error");
+let validationText = document.querySelector(".validation-text");
 
 
 button.onclick = (event) => {
@@ -21,7 +22,7 @@ button.onclick = (event) => {
       button.style.backgroundImage = "url(../images/icon-arrow.svg), \
                                       linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%))";
       error.style.right = "75px";
-      document.querySelector(".validation-text").style.opacity = "0";
+      validationText.style.display = "none";
       email.value = "";
     }
 
@@ -31,7 +32,7 @@ button.onclick = (event) => {
       button.style.backgroundImage = "url(../images/icon-arrow.svg), \
                                       linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 80%, 86%))";
       error.style.right = "85px";
-      document.querySelector(".validation-text").style.opacity = "1";
+      validationText.style.display = "block";
       email.focus();
     }
   } 
@@ -44,7 +45,7 @@ button.onclick = (event) => {
       button.style.right = "0";
       button.style.backgroundImage = "url(../images/icon-arrow.svg), \
                                       linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 74%, 74%))";
-      document.querySelector(".validation-text").style.opacity = "0";
+      validationText.style.display = "none";
       email.value = "";
     }
 
@@ -53,7 +54,7 @@ button.onclick = (event) => {
       button.style.right = "-27px";
       button.style.backgroundImage = "url(../images/icon-arrow.svg), \
                                       linear-gradient(135deg,hsl(0, 80%, 86%),hsl(0, 80%, 86%))";
-      document.querySelector(".validation-text").style.opacity = "1";
+      validationText.style.display = "block";
       email.focus();
     }
   }
