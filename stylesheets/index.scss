@@ -82,6 +82,7 @@ main {
     &::placeholder {
       color: $desaturated-red;
       font-weight: 300;
+      font-size: 16px;
     }
     &:focus {
       outline: none;

@@ -87,21 +87,25 @@ main {
 .email__field::-webkit-input-placeholder {
   color: #ce9797;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .email__field:-ms-input-placeholder {
   color: #ce9797;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .email__field::-ms-input-placeholder {
   color: #ce9797;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .email__field::placeholder {
   color: #ce9797;
   font-weight: 300;
+  font-size: 16px;
 }
 
 .email__field:focus {
