@@ -10,9 +10,6 @@ let validationText = document.querySelector(".validation-text");
 
 button.onclick = (event) => {
   
-  // Prevent page refresh on form submission
-  event.preventDefault();
-
   // If screen size is 1280px and above
   if (mediaQuery.matches) {
 
@@ -21,11 +18,11 @@ button.onclick = (event) => {
       button.style.right = "0";
       error.style.right = "75px";
       validationText.style.display = "none";
-      email.value = "";
     }
 
     // Show error when email doesn't match pattern
     else {
+      event.preventDefault();  // Prevent form from submitting
       button.style.right = "-27px";
       error.style.right = "85px";
       validationText.style.display = "block";
@@ -40,11 +37,11 @@ button.onclick = (event) => {
     if (email.value.match(pattern)) {
       button.style.right = "0";
       validationText.style.display = "none";
-      email.value = "";
     }
 
     // Show error when email doesn't match pattern
     else {
+      event.preventDefault(); // Prevent form from submitting
       button.style.right = "-27px";
       validationText.style.display = "block";
       email.focus();
