@@ -8,6 +8,16 @@ let error = document.querySelector(".email__error");
 let validationText = document.querySelector(".validation-text");
 
 
+email.addEventListener('keyup', (e)=>{
+  if (!e.target.value.match(pattern)) {
+    email.style.color = 'red';
+  }else {
+    email.style.color = 'green';
+  }
+  
+  
+})
+
 button.onclick = (event) => {
   
   // If screen size is 1280px and above
